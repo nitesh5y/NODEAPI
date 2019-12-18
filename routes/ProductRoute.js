@@ -1,6 +1,8 @@
 const productRouter = require("express").Router();
 const mongoose = require("mongoose");
+require("../model/Product")
 const Product = mongoose.model("Product");
+
 
 productRouter.get("/", async function (req, res) {
     try {

@@ -1,5 +1,6 @@
 const categoryRouter = require("express").Router();
 const mongoose = require("mongoose");
+require("../model/Category")
 const category = mongoose.model("Category");
 
 categoryRouter.get("/", async function (req, res) {
